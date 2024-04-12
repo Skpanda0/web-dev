@@ -1,0 +1,129 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.conatiner{
+    height: 100vh;
+    width: 100vw;
+    background-image: linear-gradient(160deg, #00d2e9bd 0%, #80d094a3 100%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card{
+    height:550px;
+    width: 350px;
+    background-color: white;
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    box-shadow: 0px 0px 22.5px rgb(62, 43, 43);;
+}
+.card #img1{
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+}
+
+.box{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+}
+
+.box h2{
+    text-align: center;
+    text-shadow:-1px 1px 1.5px rgb(62, 43, 43);
+    font-size: 1.7rem;
+}
+
+.box p{
+    padding: 15px;
+    text-align: center;
+    font-size: 1.2rem;
+}
+
+.box1{
+    width: 80%;
+    height: 50px;
+    background-color: #2b787287;
+    border-radius: 10px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding-left: 15px;
+    padding-right: 15px;
+    gap:35px;
+    box-shadow: 0px 14px 28px 0px rgba(0,0,0,0.25),0px 10px 10px 0px rgba(0,0,0,0.22);
+}
+
+#leftbox{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    gap:19px;
+    align-items: center;
+}
+
+#payment p{
+    padding: 0;
+    font-size: 16.5px;
+    margin: 3px;
+}
+
+#rightbox{
+    height: 100%;
+    width: 20%;
+    margin-right: 10px;
+}
+
+#leftbox img{
+    height: 40px;
+    width: 35px;
+    border-radius: 10px;
+    margin-top: 3px;
+}
+
+.box button{
+    width: 80%;
+    height: 35.5px;
+    border-radius: 10px;
+    box-shadow: 0px 14px 28px 0px rgba(0,0,0,0.25),0px 10px 10px 0px rgba(0,0,0,0.22);
+    background-color: #6ce2d987;
+}
+
+#cancelorder{
+    padding: 15px;
+}
+
+a{
+    text-decoration: none;
+    font-size: 1.2rem;
+    font-weight: bolder;
+}
+
+@media (max-width: 250px) {
+    .box1{
+        flex-direction: column;
+        height: 70px;
+        gap:5px;
+        padding-bottom: 10px;
+    }
+    #leftbox{
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+    }
+}
+@media (max-width: 400px) {
+    .card{
+        height:600px;
+    }
+}
