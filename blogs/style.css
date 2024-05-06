@@ -10,7 +10,7 @@ body{
 }
 
 .container{
-    width: 70vw;
+    width: 80vw;
     padding: 1rem 3rem;
     margin: 0rem auto;
 }
@@ -40,11 +40,12 @@ a{
 
 .main_container{
     display: grid;
-    grid-template-columns: repeat(1, 1fr);
+    grid-template-columns: repeat(auto-fit, minmax(200px,228px));
     gap:1rem;
+    justify-content: center;
 }
 
-@media (min-width:650px){
+/* @media (min-width:650px){
     .main_container{
         grid-template-columns: repeat(2,1fr);
     }
@@ -58,7 +59,7 @@ a{
     .main_container{
         grid-template-columns: repeat(4,1fr);
     }
-}
+} */
 
 .card_container{
     display: flex;
